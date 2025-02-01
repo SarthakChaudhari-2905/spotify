@@ -3,7 +3,7 @@
 const songs = [
     {
         name: 'Black Money',
-        file: "musicfolder/black-money-loka-x-sambata-official-music-video-128-ytshorts.savetube.me.mp3",
+        file: " musicfolder/black-money-loka-x-sambata-official-music-video-128-ytshorts.savetube.me.mp3",
     },
     {
         name: 'Ice',
