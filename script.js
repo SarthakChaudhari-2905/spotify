@@ -3,19 +3,19 @@
 const songs = [
     {
         name: 'Black Money',
-        file: "../musicfolder/black-money-loka-x-sambata-official-music-video-128-ytshorts.savetube.me.mp3",
+        file: "musicfolder/black-money-loka-x-sambata-official-music-video-128-ytshorts.savetube.me.mp3",
     },
     {
         name: 'Ice',
-        file: "../musicfolder/shubh-ice-official-audio-128-ytshorts.savetube.me.mp3",
+        file: "musicfolder/shubh-ice-official-audio-128-ytshorts.savetube.me.mp3",
     },
     {
         name: '2055',
-        file: "../musicfolder/sleepy-hallow-2055-official-video-128-ytshorts.savetube.me.mp3",
+        file: "musicfolder/sleepy-hallow-2055-official-video-128-ytshorts.savetube.me.mp3",
     },
     {
         name: 'offshore',
-        file: "../musicfolder/offshore-official-audio-shubh-128-ytshorts.savetube.me.mp3",
+        file: "musicfolder/offshore-official-audio-shubh-128-ytshorts.savetube.me.mp3",
     },{
         name: 'og',
         file: "musicfolder/shubh-og-official-music-video-128-ytshorts.savetube.me.mp3",
@@ -24,16 +24,16 @@ const songs = [
         file: "musicfolder/lil-tecca-ransom-official-music-video-128-ytshorts.savetube.me.mp3",
     },{
         name: 'jo tum mere ho',
-        file: "../musicfolder/anuv-jain-jo-tum-mere-ho-official-video-128-ytshorts.savetube.me.mp3",
+        file: "musicfolder/anuv-jain-jo-tum-mere-ho-official-video-128-ytshorts.savetube.me.mp3",
     },{
         name: 'millionair',
-        file: "../musicfolder/millionaire-song-full-video-yoyohoneysingh-glory-bhushan-kumar-128-ytshorts.savetube.me.mp3",
+        file: "musicfolder/millionaire-song-full-video-yoyohoneysingh-glory-bhushan-kumar-128-ytshorts.savetube.me.mp3",
     },{
         name: 'safety off- never fold',
-        file: "../musicfolder/safety-off-x-never-fold-remastered-128-ytshorts.savetube.me.mp3",
+        file: "musicfolder/safety-off-x-never-fold-remastered-128-ytshorts.savetube.me.mp3",
     },{
         name: 'Aura',
-        file: "../musicfolder/shubh-aura-official-audio-128-ytshorts.savetube.me.mp3",
+        file: "musicfolder/shubh-aura-official-audio-128-ytshorts.savetube.me.mp3",
     }
 ];
 
