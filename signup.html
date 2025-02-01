@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container" id="formContainer">
+            <h2 id="formTitle">Login</h2>
+            <form id="authForm">
+                <div class="input-group" id="nameGroup" style="display: none;">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" id="submitButton">Login</button>
+            </form>
+            <p id="toggleText">Don't have an account? <button id="toggleButton">Sign Up</button></p>
+        </div>
+    </div>
+    <script>
+        const toggleButton = document.getElementById("toggleButton");
+        const formTitle = document.getElementById("formTitle");
+        const submitButton = document.getElementById("submitButton");
+        const nameGroup = document.getElementById("nameGroup");
+        const toggleText = document.getElementById("toggleText");
+        let isLogin = true;
+
+        toggleButton.addEventListener("click", () => {
+            isLogin = !isLogin;
+            formTitle.textContent = isLogin ? "Login" : "Sign Up";
+            submitButton.textContent = isLogin ? "Login" : "Sign Up";
+            nameGroup.style.display = isLogin ? "none" : "block";
+            toggleText.innerHTML = isLogin ? "Don't have an account? <button id='toggleButton'>Sign Up</button>" : "Already have an account? <button id='toggleButton'>Login</button>";
+        });
+    </script>
+</body>
+</html>
+
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    .input-group {
+        margin: 10px 0;
+        text-align: left;
+    }
+    .input-group label {
+        display: block;
+        font-size: 14px;
+    }
+    .input-group input {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    button {
+        width: 100%;
+        padding: 10px;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    button:hover {
+        background: #0056b3;
+    }
+    #toggleText {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    #toggleText button {
+        background: none;
+        color: #007bff;
+        border: none;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+</style>

@@ -1,0 +1,281 @@
+    body{
+        background-color: black
+    }
+
+ .leftdown{
+ background-color:#1F1F1F;
+ color: white;
+    width: 13rem;
+    height: 28rem;
+    padding: 1px;
+    border: 2px solid white;
+    border-radius: 7px;
+    margin:0px
+}
+.container{
+    left: 0;
+    display: flex;
+}
+.right{
+    height: 100%;
+    width:75%;
+    background-color: #1F1F1F;
+    height: auto;
+    width: 100rem;
+    border-radius: 7px;
+    margin: 10px;
+
+    
+}
+.logo{
+        width: 32px;
+        display: flex;
+        column-gap: 10px;
+        margin: 2px;
+        padding: 4px;
+        margin-bottom: -15px;
+        filter: invert(1);
+}
+.home{
+    margin: 18px;
+    width: 25px;
+    display: flex;
+    margin-left: 10px;
+    filter: invert(1);
+
+
+}
+.leftup{
+    width: 13rem;
+    height: 13rem;
+    border: 2px solid white;
+    background-color: #1F1F1F;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.left{
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    width: 217px;
+    margin: 10px;
+   
+
+}
+.spotify{
+    margin-top: 5px;
+}
+.home1{
+    margin-left: 9px;
+    margin-top: 2px;
+}
+.search{
+    filter: invert(1);
+    width: 25px ;
+    display: flex;
+    margin-left: 11px;
+    margin-top: -7px;
+}
+.search1{
+    margin-top: 2px;
+    margin-left: 5px;
+}
+.library{
+    color: white;
+    margin-top: 15px;
+    padding: 36px;
+}
+.footer a{
+    color: gray;
+
+}
+.arrow{
+    display: flex;
+    filter: invert(1);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+     background-color: #4e4b4b;
+
+}
+header > *{
+    padding: 20px;
+    
+}
+.new{
+    color:white;
+    padding: 10px;
+}
+.b1 {
+    transition-duration: 0.4s;
+    border-radius: 15px;
+    padding: 5px;
+  }
+  
+ .b1:hover {
+    background-color: black;
+    color: white;
+    
+  }
+  .card{
+    width: 160px;
+ margin: 16px;
+ color: white;
+ }
+ .spotifycontainer{
+    width: 250px;
+ }
+ 
+.card h2{
+    margin-top: 2px;
+
+}
+.cardcontainer{
+    display: flex;
+}
+.card img{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.bottom-audio-player {
+    position: fixed;
+    bottom: 51px;
+    right: 53px;
+    width: 77%;
+    background: #282828; /* Match the Spotify theme */
+    color: white;
+    z-index: 1000;
+    border: none;
+    outline: none;
+}
+.cardcontainer2{
+    display: flex;
+}
+.hamburger{
+    display: none;
+    
+}
+.close{
+   display: none;
+}
+
+
+@media (max-width:1400px){
+    .left{
+        position: absolute;
+        left: -100%;
+        transition: all .3s;
+        z-index: 1;
+        background-color: black;
+        width: 329px;
+        height: 74rem
+    }
+    .leftdown{
+        width: 274px;
+    }
+    .leftup{
+        width: 274px;
+    }
+   .right{
+    width: 100rem;
+
+    height: 180rem;
+
+   }
+  
+  .close{
+    display: block;
+     filter: invert(1);
+    position:absolute;
+    top: 8px;
+    right: 62px;
+
+  
+}
+    .hamburger{
+        display: block;
+
+    
+    }
+}
+@media (max-width:957px){
+    * Basic styles for right container */
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Card container styles */
+.cardcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+}
+/* Card container styles */
+.cardcontainer2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+}
+
+/* Card styles */
+.card {
+    width: calc(33.33% - 20px); /* Default three cards per row */
+    max-width: 300px;
+    min-width: 150px;
+    height: 140px;
+    background: lightgray;
+    margin-left: 20px;
+ 
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: black;
+    padding: 35px;
+}
+.card img{
+    margin-left: 20px
+}
+.card h2{
+    margin-left: 20px
+}
+
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .card {
+        width: calc(50% - 20px); /* Two cards per row */
+    }
+}
+
+@media (max-width: 949px) {
+    .cardcontainer {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .card {
+        width: calc(50% - 20px); /* Two cards per row */
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%; /* One card per row */
+    }
+}
