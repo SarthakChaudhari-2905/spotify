@@ -18,10 +18,10 @@ const songs = [
         file: "../musicfolder/offshore-official-audio-shubh-128-ytshorts.savetube.me.mp3",
     },{
         name: 'og',
-        file: "../musicfolder/shubh-og-official-music-video-128-ytshorts.savetube.me.mp3",
+        file: "musicfolder/shubh-og-official-music-video-128-ytshorts.savetube.me.mp3",
     },{
         name: 'ransom',
-        file: "../musicfolder/lil-tecca-ransom-official-music-video-128-ytshorts.savetube.me.mp3",
+        file: "musicfolder/lil-tecca-ransom-official-music-video-128-ytshorts.savetube.me.mp3",
     },{
         name: 'jo tum mere ho',
         file: "../musicfolder/anuv-jain-jo-tum-mere-ho-official-video-128-ytshorts.savetube.me.mp3",
